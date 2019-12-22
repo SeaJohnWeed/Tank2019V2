@@ -1,4 +1,5 @@
-import java.awt.*;
+package com.john.tank;
+
 import java.util.concurrent.TimeUnit;
 
 public class Main {
