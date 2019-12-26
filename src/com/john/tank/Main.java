@@ -4,8 +4,13 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
-        TankFrame tf = new TankFrame();
+        TankFrame tf = TankFrame.INSTANCE;
         tf.setVisible(true);
+
+//        for (int i = 0; i < Dir.values().length; i++) {
+//            System.out.println(Dir.values()[i]);
+//        }
+
 
         for (;;) {
             try {
@@ -15,5 +20,7 @@ public class Main {
             }
             tf.repaint();
         }
+
+
     }
 }
